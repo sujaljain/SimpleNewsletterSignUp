@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter</title>
+    <!-- Add some style to make the form look nice -->
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333333;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input[type=email] {
+            width: 80%;
+            padding: 10px;
+            border: 1px solid #cccccc;
+            outline: none;
+        }
+
+        input[type=submit] {
+            width: 40%;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #04AA6D;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sign up for our newsletter</h1>
+        <p>Enter your email address to receive our latest news and updates.</p>
+
+        <form action="/subscribe" method="POST">
+
+            <input type="email" name="email" placeholder="Enter your email" required>
+
+            <input type="submit" value="Subscribe">
+        </form>
+    </div>
+</body>
+
+</html>
