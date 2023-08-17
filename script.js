@@ -21,8 +21,8 @@ app.post('/subscribe', (req, res) => {
     const { email } = req.body;
 
     // Mailgun API credentials
-    const api_key = 'key-f744750ef9827ca37cad82999c7268e3';
-    const domain = 'sandbox4187c8b5a04e4b7083719345ccf89b3f.mailgun.org';
+    const api_key = 'MY_API_KEY';
+    const domain = '_DOMAIN_';
 
     // Create a Mailgun instance
     const mg = mailgun({ apiKey: api_key, domain: domain });
